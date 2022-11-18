@@ -1,0 +1,31 @@
+/* Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+body {
+    font-family: sans-serif;    
+}
+
+/* Utils */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/** Main **/
+main {
+    height: calc(100vh - 100px);
+    background-color: blue;
+    display: flex;
+}
+
+/** Footer **/
+footer {
+    min-height: 100px;
+    background-color: #282828;
+}
