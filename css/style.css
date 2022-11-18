@@ -5,47 +5,77 @@
     box-sizing: border-box;
 }
 
-/* Generics */
+/********* Generics **********/
 body {
     font-family: sans-serif;    
 }
+
 img {
     display: block;
     max-width: 100%;
 }
 
-/* Utils */
+a {
+    text-decoration: none;
+}
+/*****************************/
+
+/********** Utils ************/
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.btn {
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+/*****************************/
 
-/**** Main ****/
+
+
+
+
+/*TODO:**** Main ****/
 main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 75px);
     display: flex;
 }
+/*TODO:**************/
 
-/**** Nav Left ****/
+
+
+/*? ** Nav Left ***-->*/
 nav {
     height: 100%;
     width: 200px;
     background-color: #000;
     padding: 0 15px;
 }
+/*? ****************<--/
+
+
+
+/*? *Figli di Nav Left ***-->*/
+/*** Col ***/
 nav .col {
     width: 70%;
     height: 90%;
     border: 1px dashed violet;
-
 }
+
+/*** Profile  **-->*/
 nav .profile {
     height: 10%;
     width: 100%;
     border: 1px dashed blue;
 }
+/*? ************************<--/
 
+
+
+/*? * Figli di Col **-->*/
 /** Logo **/
 figure {
     height: 70px;    
@@ -65,6 +95,11 @@ figure {
     width: 100%;    
     border: 1px dashed red;
 }
+/*? *******************<--/
+
+
+
+/*? Figli di Playlist *-->*/
 /* New Playlist */
 .new-playlist {
     min-height: 25%;
@@ -77,31 +112,44 @@ figure {
     min-height: 75%;
     width: 100%;
     border: 1px dashed green;
-
 }
+/*? *********************<--/
 
 
 
-
-
-
-/**** Display ****/
+/*? * Display ***-->*/
 #display {
     height: 100%;
     flex-grow: 1;
     background-color: #141922;
 }
+/*? **************<--/
 
-/**** Header ****/
+
+
+/*? * Figli di Display ***-->*/
+/*** Header ***/
 header {
     min-height: 80px;
     width: 100%;
-    background-color: #000;
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: end;
+    line-height: 80px;
+    padding-right: 20px;
 }
 
-/**** Footer ****/
+header .btn {
+    color: #fff;
+    font-size: 12px;
+}
+/*? ***********************<--/
+
+
+
+/*TODO:**** Footer ****/
 footer {
-    min-height: 100px;
+    min-height: 75px;
     background-color: #282828;
 }
+/*TODO:****************/
