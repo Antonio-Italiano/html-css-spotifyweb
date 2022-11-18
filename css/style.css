@@ -24,6 +24,13 @@ main {
     display: flex;
 }
 
+/** Nav **/
+nav {
+    height: 100%;
+    width: 300px;
+    background-color: #000;
+}
+
 /** Footer **/
 footer {
     min-height: 100px;
