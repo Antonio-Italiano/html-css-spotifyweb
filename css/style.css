@@ -31,6 +31,9 @@ a {
     border: 1px solid;
     border-radius: 20px;
 }
+.flex {
+    display: flex;
+}
 /*****************************/
 
 
@@ -151,5 +154,27 @@ header .btn {
 footer {
     min-height: 75px;
     background-color: #282828;
+    display: flex;
 }
 /*TODO:****************/
+
+
+.ft-left,
+.ft-center,
+.ft-right{
+    width: calc(100vw / 3);
+    border: 1px dashed red;
+}
+.song,
+.reaction {
+    height: 100%;
+    width: 50%;
+    border: 1px dashed blue;
+}
+/** Figli di Ft-Center **/
+.top,
+.down {
+    height: 50%;
+    width: 100%;
+    border: 1px dashed blue;
+}
