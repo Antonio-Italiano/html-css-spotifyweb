@@ -15,8 +15,8 @@
 <body>
     <main>
 
-        <!-- Nav Left -->
-        <nav>
+        <!-- Nav Standard -->
+        <nav class="s-md-lg">
             <div class="col">
 
                 <!-- Logo -->
@@ -61,11 +61,8 @@
                         <a href="#"><p>Nome Playlist</p></a>
                         <a href="#"><p>Nome Playlist</p></a>
                         <a href="#"><p>Nome Playlist</p></a>
-
-
                     </div>
                 </div>
-
             </div>
             <div class="profile">
                 <div class="install flex">
@@ -83,6 +80,50 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Nav Xs  -->
+        <nav class="xs">
+            <div class="col">
+
+                <!-- Logo -->
+                <figure>
+                    <img src="img/logo-small.svg" alt="">
+                </figure>
+                <!-- Nav Col -->
+                <div class="nav-col flex">
+                    <ul>
+                        <li class="home flex">
+                            <a href="#">
+                                <img src="img/home.svg" alt="">                                
+                            </a>
+                        </li>
+                        <li class="near flex">
+                            <a href="#">
+                                <img src="img/search.svg" alt="">                                
+                            </a>                            
+                        </li>
+                        <li class="bookshelf flex">
+                            <a href="#">
+                                <img src="img/libreria.svg" alt="">                                
+                            </a>                           
+                        </li>
+                    </ul>                  
+                </div>
+            </div>    
+            <div class="profile">
+                <div class="install flex">
+                    <figure class="flex">
+                        <img src="img/download.svg" alt="">
+                    </figure>                 
+                </div>
+                <div class="name-profile flex">
+                    <figure>
+                        <img src="img/profile.svg" alt="">
+                    </figure>                    
+                </div>
+            </div>            
+        </nav>
+
         <div id="display">
             <header>
                 <a class="btn" href="#">EFFETTUA L'UPGRADE</a>
@@ -154,7 +195,7 @@
                 <h2>Creato per John Doe</h2>
                 <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                 <div class="row flex">
-                    <div class="col flex">
+                    <div class="col-down flex">
                         <div class="card">
                             <figure>
                                 <img src="img/radar.jpeg" alt="">
@@ -170,19 +211,78 @@
                     </div>                    
                 </div>
             </div>
+            <div class="content-display">
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="row flex">
+                    <div class="col-down flex">
+                        <div class="card">
+                            <figure class="down-img">
+                                <img src="img/youg.jpeg" alt="">
+                            </figure>                            
+                            <h4>Lana del rey</h4>
+                        </div>
+                        <div class="card">
+                            <figure class="down-img">
+                                <img src="img/einaudi.jpeg" alt="">
+                            </figure>                            
+                            <h4>Ludovico Einaudi</h4>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
         </div>  
            
     </main>
     <footer>    
         <div class="ft-left flex">
-            <div class="song"></div>
-            <div class="reaction"></div>
+            <div class="song flex">
+                <figure>
+                    <img src="img/sinister.jpeg" alt="">
+                </figure>
+                <div>
+                    <h4>Sinister</h4>
+                    <p>brano Nome</p>
+                </div>
+                
+            </div>
+            <div class="reaction">
+                <ul class="flex">
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-folder"></i></a></li>
+                </ul>
+                
+                
+            </div>
         </div>
         <div class="ft-center">
-            <div class="top"></div>
-            <div class="down"></div> 
+            <div class="top">
+                <ul class="top-cont flex">
+                    <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-backward-step"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle-play fa-xl"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-forward-step"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a></li>
+                </ul>             
+            </div>
+            <div class="down flex">
+                <p>0:25</p>
+                <div class="progress-bar">
+                    <div class="value"></div>
+                </div>
+                <p>4:35</p>
+            </div> 
         </div>
-        <div class="ft-right"></div>      
+        <div class="ft-right flex">
+            <div class="w-70 flex">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="progress-bar">
+                    <div class="value"></div>
+                </div>
+            </div>            
+        </div>      
     </footer>
 </body>
 </html>
