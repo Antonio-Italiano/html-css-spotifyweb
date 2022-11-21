@@ -12,7 +12,6 @@ body {
 
 img {
     display: block;
-    max-width: 100%;
 }
 
 a {
@@ -36,13 +35,11 @@ li {
 }
 
 .card {
-    height: 160px;
-    width: 160px;
+    min-height: 160px;
+    width: 50%;
     /* background-color: aqua; */
 }
 /*****************************/
-
-
 
 
 
@@ -60,7 +57,9 @@ nav {
     height: 100%;
     min-width: 200px;
     background-color: #000;
-    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /*? ****************<--/
 
@@ -69,40 +68,132 @@ nav {
 /*? *Figli di Nav Left ***-->*/
 /*** Col ***/
 nav .col {
-    width: 70%;
-    height: 90%;
-    border: 1px dashed violet;
+    width: 90%;
+    height: 85%;
 }
 
 /*** Profile  **-->*/
 nav .profile {
-    height: 10%;
+    height: 12%;
     width: 100%;
-    border: 1px dashed blue;
+    color: #787B7F;
 }
+
+.nav .profile img {
+    max-height: 100%;
+}
+
+.profile hr {
+    border: 1px solid #787B7F;
+}
+
+.profile .install {
+    height: 40%;
+    align-items: center;
+}
+
+.profile .name-profile {
+    height: 60%;
+    align-items: center;
+}
+
+.profile figure {
+    height: 25px;
+    width: 25px;
+    align-items: center;
+} 
+
+.profile .install {
+    font-size: 13px;
+}
+
+.profile .install img {
+    height: 17px;
+}
+
+.profile .name-profile {
+    font-size: 20px;  
+    gap: 10px;  
+    color: #fff;
+}
+
+.profile .name-profile img {
+    max-height: 100%;
+    width: 25px;
+    background-size: cover;
+    background-color: #787B7F;
+    border-radius: 50%;
+}
+
+
+
+
 /*? ************************<--/
 
 
 
 /*? * Figli di Col **-->*/
 /** Logo **/
-figure {
-    height: 70px;    
-    border: 1px dashed red;
+.col figure {
+    height: 50px;    
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.col figure img {
+    height: 100%;
 }
 
 /** Nav-Col **/
 .nav-col {
     min-height: 90px;
     width: 100%;
-    border: 1px dashed red;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 0;
+    
+}
+.nav-col li {
+    margin: 10px 0;
+}
+
+.nav-col .home a {
+    color: #fff; 
+    margin-right: 5px;   
+    font-size: 13px;
+    border-left: 3px solid #96DD2D;
+}
+
+.nav-col .bookshelf a,
+.nav-col .near a {
+    color: #787B7F;
+    margin: 0 5px 0 3px;
+    font-size: 13px;
+}
+.nav-col img {
+    height: 20px;
+    margin: 0 5px;
+}
+
+.nav-col a {
+    display: flex;
+    line-height: 20px;
 }
 
 /** Playlist **/
 .playlist {
-    height: 220px;
+    min-height: 280px;
     width: 100%;    
-    border: 1px dashed red;
+    color: #787B7F;
+    padding-left: 8px;
+}
+
+.playlist a {
+    color: #787B7F;
+}
+
+.playlist h5{
+    color: #fff;
 }
 /*? *******************<--/
 
@@ -111,16 +202,30 @@ figure {
 /*? Figli di Playlist *-->*/
 /* New Playlist */
 .new-playlist {
-    min-height: 25%;
     width: 100%;
-    border: 1px dashed green;
+    margin: 10px 0;
+}
+
+.new-playlist i {
+    padding: 10px;
+    background-color: #787B7F;
+    color: #000;
+    margin-right: 5px;
+}
+
+.new-playlist a {
+    line-height: 34px;
 }
 
 /* Collect Playlist */
 .collect-playlist {
     min-height: 75%;
     width: 100%;
-    border: 1px dashed green;
+}
+
+.collect-playlist a {
+    line-height: 30px;
+    font-size: 13px;
 }
 /*? *********************<--/
 
@@ -132,6 +237,7 @@ figure {
     flex-grow: 1;
     background-color: #141922;
     overflow-y: auto;
+    position: relative;
 }
 /*? **************<--/
 
@@ -147,6 +253,11 @@ header {
     text-align: end;
     line-height: 80px;
     padding-right: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 header .btn {
@@ -160,7 +271,7 @@ header .btn {
     flex-wrap: wrap; 
 }
 .nav-display li {
-    margin: 10px 0;
+    margin: 10px 8px;
     text-align: center;
     
 }
@@ -174,7 +285,7 @@ header .btn {
 .nav-display hr {
     width: 30%;
     margin: 0 auto;
-    color: #96DD2D;
+    border: 1px solid #96DD2D;
 }
 
 /*** Content Display ***/
@@ -184,19 +295,43 @@ header .btn {
     padding: 10px;
     border: 1px dashed #96DD2D;
 }
+.content-display figure {
+    height: auto;
+    width: 100%;
+}
+
+.content-display figure img {
+    width: 100%;    
+}
 
 .content-display h2 {
     color: #fff;
     margin-bottom: 20px;
 }
 
+.content-display .card h4 {
+    color: #fff;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.content-display .card p {
+    text-align: center;
+}
+
+.content-display p {
+    color: #787B7F;
+    font-size: 13px;
+}
 .content-display .row {
     flex-wrap: wrap;
 }
 
 .content-display .col {
-    gap: 15px;
-    margin-bottom: 15px;
+    width: 100%;
+    min-width: 280px;
+    max-width: 310px;
+    gap: 10px;
     margin-right: 15px;
 }
 /*? ***********************<--/
@@ -207,7 +342,8 @@ header .btn {
 footer {
     min-height: 75px;
     background-color: #282828;
-    display: flex;    
+    display: flex;
+    position: absolute; 
 }
 /*TODO:****************/
 
@@ -218,12 +354,14 @@ footer {
     width: calc(100vw / 3);
     border: 1px dashed red;
 }
+
 .song,
 .reaction {
     height: 100%;
     width: 50%;
     border: 1px dashed blue;
 }
+
 /** Figli di Ft-Center **/
 .top,
 .down {
